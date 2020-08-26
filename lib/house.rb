@@ -35,4 +35,8 @@ class House
     details_hash
   end
 
+  def price_per_square_foot
+    (@price.delete("$").to_i / area.to_f).round(2)
+  end
+
 end
