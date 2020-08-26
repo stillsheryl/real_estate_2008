@@ -28,4 +28,11 @@ class House
     total_area
   end
 
+  def details
+    details_hash = Hash.new
+    details_hash["price"] = @price.delete("$").to_i
+    details_hash["address"] = @address
+    details_hash
+  end
+
 end
