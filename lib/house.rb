@@ -43,4 +43,12 @@ class House
     (@rooms.sort_by { |room| room.area}).reverse
   end
 
+  def rooms_by_category
+    by_category = @rooms.map { |room| room.category}.sort
+    by_category.group_by do |category|
+
+    # require "pry"; binding.pry
+    end
+  end
+
 end
