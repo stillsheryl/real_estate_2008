@@ -21,7 +21,12 @@ class HouseTest < Minitest::Test
     house = House.new("$400000", "123 sugar lane")
 
     assert_equal "123 sugar lane", house.address
+  end
 
+  def test_it_starts_with_no_rooms
+    house = House.new("$400000", "123 sugar lane")
+
+    assert_equal [], house.rooms
   end
 
 end
