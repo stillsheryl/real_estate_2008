@@ -15,8 +15,4 @@ class Room
     @painted = true
   end
 
-  def is_painted?
-    painted = false
-  end
-
 end
